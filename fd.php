@@ -84,14 +84,14 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANB"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","🔓 Message: ".$message);
-        echo "\n".color("nevy","🔒 GOSEND");
+        echo "\n".color("nevy","🔒 SPESIAL ANTI BAU");
         echo "\n".color("yellow","⏳ SABAR");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
         }
         sleep(5);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHNGIRIM"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"AXEANTIMATIGAYA"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green","🔓 Message: ".$messageboba09);
         sleep(3);
