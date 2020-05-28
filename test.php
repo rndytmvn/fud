@@ -148,7 +148,6 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          echo color("red","-] GAGAL!!!\n");
          }
          }
-         }
          }else{
          echo color("red","-] OTP SALAH, CEK LAGI");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
