@@ -61,13 +61,13 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","🔐 Message: ".$message);
 	      gocar:
-        echo "\n".color("nevy","🔒 VOC ONGKIR");
+        echo "\n".color("nevy","🔒KALAU BELUM SUKSES TEDT LAGI");
         echo "\n".color("yellow","⏳ SABAR");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(20);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD260520FD"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD260520"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","🔓 Message: ".$message);
@@ -75,23 +75,23 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","🔐 Message: ".$message);
         gofood:
-        echo "\n".color("nevy","🔒 GOFOOD 3");
+        echo "\n".color("nevy","🔒MASIH BELUM SUKSES ? TEST LAGI");
         echo "\n".color("yellow","⏳ SABAR");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANFD"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD260520FD}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","🔓 Message: ".$message);
-        echo "\n".color("nevy","🔒 SPESIAL ANTI BAU");
+        echo "\n".color("nevy","🔒 MASIH BELUM BISA ? INI TERAKHIR");
         echo "\n".color("yellow","⏳ SABAR");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
         }
         sleep(5);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"AXEANTIMATIGAYA"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD260520"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green","🔓 Message: ".$messageboba09);
         sleep(3);
